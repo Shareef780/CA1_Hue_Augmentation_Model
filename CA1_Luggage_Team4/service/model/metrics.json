@@ -1,0 +1,42 @@
+{
+ "classes": [
+  "luggage_left",
+  "luggage_right",
+  "person_left",
+  "person_right"
+ ],
+ "confidence_threshold": 0.4,
+ "note": "0.40 is the default from the training notebook. Change it here if the team chooses another value.",
+ "model": "hue only: yolo26n.pt, hsv_h 0.5, 100 epochs, image size 640, batch 16, fliplr 0.0, seed 0",
+ "trained_on": "RTX 3060, Ultralytics 8.4.120",
+ "valid": {
+  "precision": 0.947,
+  "recall": 0.943,
+  "map50": 0.977,
+  "map": 0.788,
+  "map_luggage_left": 0.855,
+  "map_luggage_right": 0.768,
+  "map_person_left": 0.775,
+  "map_person_right": 0.751
+ },
+ "test": {
+  "precision": 0.948,
+  "recall": 0.971,
+  "map50": 0.992,
+  "map": 0.803,
+  "map_luggage_left": 0.819,
+  "map_luggage_right": 0.776,
+  "map_person_left": 0.763,
+  "map_person_right": 0.852
+ },
+ "test_colour_removed": {
+  "precision": 0.952,
+  "recall": 0.976,
+  "map50": 0.988,
+  "map": 0.772,
+  "map_luggage_left": 0.75,
+  "map_luggage_right": 0.729,
+  "map_person_left": 0.752,
+  "map_person_right": 0.856
+ }
+}
